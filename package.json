@@ -1,0 +1,32 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My breathtaking Nuxt.js project",
+  "author": "manda",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/bulma": "^1.2.1",
+    "axios": "^0.18.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.12.1",
+    "express": "^4.16.4",
+    "gsap": "^2.0.2",
+    "nuxt": "^2.3.4",
+    "nuxt-sass-resources-loader": "^2.0.5"
+  },
+  "devDependencies": {
+    "css-loader": "^2.1.0",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
+    "sass-loader": "^7.1.0",
+    "svg-inline-loader": "^0.8.0",
+    "vue-svg-loader": "^0.11.0",
+    "webpack": "^4.28.4"
+  }
+}

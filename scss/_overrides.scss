@@ -1,0 +1,43 @@
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/functions';
+
+//Fonts
+@import url('https://rsms.me/inter/inter-ui.css');
+@supports (font-variation-settings: normal) {
+    html { font-family: 'Inter UI var alt', sans-serif; }
+  }
+  
+  $family-sans-serif:  'Inter UI', Arial, Helvetica, sans-serif;
+
+//Style overrides
+.skill-bars
+li{
+  position: relative;
+  margin-bottom:15px;
+  padding-left: 15px;
+
+  .bar-container,
+  .bar-1, .bar-2, .bar-3, .bar-4, .bar-5{
+      position: absolute;
+      left: 0;
+      height: 5px;
+      border-radius: 5px;
+      content: "";
+  }
+
+  .bar-container {
+      bottom: -8px;
+      width: 500px;
+      background-color: gray;
+      text-align: right;
+      .bar-1, .bar-2, .bar-3, .bar-4, .bar-5 {
+          top: 0;
+      }
+
+      .bar-1{
+        background-color: pink;
+    }
+  }
+}
+
+@import '~bulma';
